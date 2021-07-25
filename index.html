@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador - Stock & REITS</title>
+    <link rel="shortcut icon" href="img/01imgMoney.png">
+
+
+    <meta name="author" content="Jackson Silva">
+    <meta name="description" content="Simulador Stock e Rets">
+    <meta name="keyword" content="convertor moeda stock dolar rets money">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!--Fonts-->
+
+    <!--font-family: 'Staatliches', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <!--font-family: 'Staatliches', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <!--font-family: 'Tourney', cursive;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap" rel="stylesheet">
+
+    <!--font-family: 'Oxygen', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script type="text/javascript" src="js/scriptStyle.js" defer></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header id="cabecalho-header">
+        <div class="container-logo-top">
+            <i class="fas fa-money-bill-alt"></i>
+            <h2 class="subTitulo">Simulador</h2>
+            <h2 class="subTitulo">Stock & REITS</h2>
+        </div>
+
+        <nav class="menu-nav">
+            <!--menu burger-->
+            <input type="checkbox" id="check-menu" class="checbox-menu">
+            <label for="check-menu" class="lbl-menu-humburger">
+                <div class="btn-icon-menu">
+                    <div class="btn-nav-icon"></div>
+                </div>
+            </label>
+
+            <ul  class="menu-ul-lista">
+                <li><a href="#acoraTop">home</a></li>
+                <li><a href="#frmSimulador">Simulador</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#lista-contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Menu-->
+
+    
+    <main id="principal">
+        <!--artigo top introdução-->
+        <article class="artigo artigo-top">
+                <div class="slide-image-externa" id="acoraTop">
+                    <div class="slide-image-interna">
+                        <img src="img/slade01lib.jpg" alt="estatua da liberdade" class="img-slide">
+                        <img src="img/slide02Dolar.jpg" alt=" dolar" class="img-slide">
+                        <img src="img/slide03Dolar.jpg" alt="dolar quebra-cabeça" class="img-slide">
+                        <img src="img/slide04.jpg" alt="" class="img-slide">
+                    </div>
+                </div>
+                <h2 class="subtitulo-artigo subtitulo-artigo-ajuste">Simulador</h2>
+                <h2 class="subtitulo-artigo"> Stock & RETS</h2>
+                <p class="paragrafo">
+                    Abaixo um simulador, que calcula o total de Stock e RETS e converte o investimento em  Dolar e Real:
+                </p>
+        </article>
+        <!--Form-->
+        <div id="frmSimulador">
+            <!--input field-->
+            <fieldset class="field field-input">
+               
+                <!--input conteiner-->
+
+                <!--Real - Valor Dolar Hoje-->
+                <div class="group-Input">
+                    <!--area input-->
+                    <div class="input-txt">
+                        <img src="img/03imgFlagBrasil.png" alt="flag usa" class="img-rotulo-input">
+                        <input type="number" placeholder="R$:0.00" required id="txtValorDolarHoje" class="txtStoke" min="0">
+                    </div>
+                    <label for="txtValorDolarHoje" class="lbl-info-stoke">Informe o valor do dolar hoje</label>
+                </div>
+
+                <!--Valor da Stoke & RETS em Dolar-->
+                <div class="group-Input">
+                    <!--area input-->
+                    <div class="input-txt">
+                        <img src="img/02imgFlagUSA.png" alt="flag usa" class="img-rotulo-input x">
+                        <input type="number" placeholder="US$:0.00" required id="txtValorStoke" class="txtStoke" min="0">
+                    </div>
+                    <label for="txtValorStoke" class="lbl-info-stoke">Informe o valor do ativo Stoke & RET</label>
+                </div>
+                <!--Valor da Corretagem em Dolar-->
+                <div class="group-Input">
+                    <!--area input-->
+                    <div class="input-txt">
+                        <img src="img/02imgFlagUSA.png" alt="flag usa" class="img-rotulo-input ">
+                        <input type="number" placeholder="US$:0.00" required id="txtValorCorretagem" class="txtStoke" min="0">
+                    </div>
+                    <label for="txtValorCorretagem" class="lbl-info-stoke">Informe o Valor da corretagem</label>
+                </div>
+                <div class="conteiner-btn">
+                    <button class="btn" id="btnConfirmar">Confirmar</button>
+                    <button class="btn" id="btnCancelar">Cancelar</button>
+                </div>
+            </fieldset>
+
+            <!--output Field-->
+            <fieldset id="scrollResultado" class="field field-output">
+                <h3 class="field-subtitulo">Resultado Final</h3>
+                <dl id="dl-Resultado">
+                    <!--Resultado Final em Dolar-->
+                    <dt>
+                        <img src="img/02imgFlagUSA.png" alt="bandeira dos EUA" class="img-dt-resultado">
+                        <span>Total:</span>
+                    </dt>
+                    <dd><p class="resultado-paragrafo" id="p-total-dolar">US$:0,00</p></dd>
+                    <!--Resultado Final em Real-->
+                    <dt>
+                        <img src="img/03imgFlagBrasil.png" alt="bandeira dos EUA" class="img-dt-resultado">
+                        <span>Total:</span>
+                    </dt>
+                    <dd><p class="resultado-paragrafo" id="p-total-real">R$:0,00</p></dd>
+                </dl>
+            </fieldset>
+        </div>
+        <!--Seção de artigos-->
+        <section class="secao-artigo" id="sobre">
+            <article class="artigo">
+                <i class="icon-artigo fas fa-money-bill-alt"></i>
+                <h2 class="subtitulo">Stock</h2>
+                <p class="paragrafo">
+                    Stoke, o que é?
+                    O termo Stoke se refere às ações negociadas na bolsa dos EUA mas precisamente em wall street e nasdak e também é usado pare se referir à análise de uma empresa antes de investir.
+                </p>
+            </article>
+
+            <article class="artigo">
+                <i class=" icon-artigo fab fa-monero"></i>
+                <h2 class="subtitulo"> REITs</h2>
+                <p class="paragrafo">
+                    os REITs foram criados na década de 1960, no Brasil a 
+                    maioria dos fundos só começou a ser negociadas a partir 
+                    de 2008, Os Real Estate Investiment Trusts, ou abreviado
+                     REITs, são modalidades de investimentos
+                    que funcionam por meio de empresas proprietárias 
+                    de imóveis que financiam ou operam esses ativos com o propósito de geral renda.
+                </p>
+                <p class="paragrafo">
+                    Ou seja, os REITs são como empresas que possui conselho e um CEO. por meio delas, os investidores conseguem acessar 
+                    oportunidades do mercado imobiliário, adquirindo propriedades bem localizadas e com alta valorização
+                    junto ao mercado.
+                </p>
+            </article>
+
+            <article class="artigo">
+                <i class=" icon-artigo fas fa-money-check-alt"></i>
+                <h2 class="subtitulo">REITs X FIIs</h2>
+                <p class="paragrafo">
+                    <span class="distaque">Quais são as principais diferença entre REITs e Fundos Imobiliários?</span>
+                    Alguns investidores confundem os REITs ameiracnos com os FIIs brasileiros.Embora em ambas classes de ativos o direcionamento seja para o mesmo mercado, exitem paricularidades
+                    importantes entre eles. veja abaixo:
+                    <ul class="list-info">
+                        <li>
+                            Os Fundos Imobiliário são construídos por meio de fundos de investimentos enquanto os REITs
+                            são empresas;
+                            
+                        </li>
+
+                        <li>
+                            Os FIIs tem que disribuir 95% da sua geração de renda, os REITs, por 
+                            sua vez, apenas 90% do seu lucro;
+                        </li>
+
+                        <li>
+                            Os FIIs são insentos taxação de dividendos, mas, são tributados em 20%
+                            em operações de ganho de capital. Já os REITs devem respeitar as regras de tributação das 
+                            pessoas jurídicas/ empresas americanas, além de terem a possibilidade de dedução dos tributos pagos
+                            sobre dividendos.
+                        </li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape">
+        <ul id="lista-contatos">
+            <li><a href="https://www.facebook.com/jackson.silva.75436/" class="link-contato"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jackson-silva-50641b184/" class="link-contato"><i class="fab fa-linkedin-in"></i></a></li>
+            <li>
+                <a href="https://github.com/cajui54" class="link-contato">
+                    <i class="fab fa-github"></i>
+               </a>
+            </li>
+        </ul>
+        <h3 class="subtitulo-footer">Smart Stock & RETS</h3>
+    </footer>
+</body>
+</html>
